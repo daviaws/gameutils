@@ -1,3 +1,5 @@
+import os
+
 class PrintableBoard():
 
     EMPTY_PLACE = " "
@@ -20,6 +22,9 @@ class PrintableBoard():
 
     def clean(self):
         self.__build()
+
+    def clear_screen(self):
+        os.system('cls' if os.name=='nt' else 'clear')
 
     def __repr__(self):
         to_print = "-" * (self.width + 2) + "\n"

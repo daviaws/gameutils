@@ -1,5 +1,5 @@
 from gameutils.patterns import MetaSingleton
-from gameutils.space.directions import Direction
+from gameutils.space import Direction
 
 
 class Cood(metaclass=MetaSingleton):
