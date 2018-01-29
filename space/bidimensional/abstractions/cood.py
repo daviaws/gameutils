@@ -42,9 +42,9 @@ class Cood(metaclass=MetaSingleton):
 
 
 DIRECTION_MAP = {
-    Direction.NORTH: Cood(0, 1),
+    Direction.NORTH: Cood(0, -1),
     Direction.EAST: Cood(1, 0),
-    Direction.SOUTH: Cood(0, -1),
+    Direction.SOUTH: Cood(0, 1),
     Direction.WEST: Cood(-1, 0),
     Direction.NORTHEAST: Cood(1, 1),
     Direction.SOUTHEAST: Cood(1, -1),
